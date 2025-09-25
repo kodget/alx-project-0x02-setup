@@ -1,3 +1,9 @@
+export interface ButtonProps {
+  shape: string;
+  size: string;
+  title: string;
+}
+
 export interface Person {
   id: string; // unique identifier
   name: string;

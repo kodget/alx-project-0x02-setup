@@ -13,7 +13,11 @@ const Home = () => {
       <CardList />
       {/* When isModalOpen is set to true, the PostModal component shows up with a form */}
       {isModalOpen && (
-        <PostModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        <PostModal
+          addPerson={addPerson}
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
+        />
       )}
     </>
   );
