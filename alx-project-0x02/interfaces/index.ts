@@ -1,3 +1,14 @@
+export interface PostCardProps {
+  posts: PostProps[];
+}
+
+export interface PostProps {
+  title: string;
+  content: string;
+  userId: number;
+  id: number;
+}
+
 export interface ButtonProps {
   shape: "rounded-sm" | "rounded-md" | "rounded-full";
   title: "small" | "medium" | "large";
