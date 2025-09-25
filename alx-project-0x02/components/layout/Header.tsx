@@ -2,16 +2,16 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div>
-      <h1>This is the header section</h1>
-      <div className="grid grid-cols-2 place-content-between">
-        <Link className="justify-start" href="/home">
-          Home
-        </Link>
-        <Link className="justify-end" href="/about">
-          About
-        </Link>
-      </div>
+    <div className="grid grid-cols-3 place-content-between p-6 bg-green-600 rounded-sm sticky top-0 z-50">
+      <Link className="justify-self-start" href="/home">
+        Home
+      </Link>
+      <Link className="justify-self-center" href="/about">
+        About
+      </Link>
+      <Link className="justify-self-end" href="/posts">
+        Posts
+      </Link>
     </div>
   );
 };
