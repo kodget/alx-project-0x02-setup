@@ -15,9 +15,10 @@ const geistMono = Geist_Mono({
 export default function Index() {
   return (
     <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 bg-black text-white`}
+      className={`${geistSans.className} ${geistMono.className} font-sans min-h-screen bg-black text-white`}
     >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <Header />
+      <main className="xl:text-6xl lg:text-5xl md:text-3xl sm:text-2xl max-[600px]:text-lg m-[20%]">
         Welcome to this page
       </main>
     </div>

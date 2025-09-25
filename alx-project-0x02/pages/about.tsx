@@ -1,7 +1,9 @@
 import Button from "@/components/common/Button";
 import Header from "@/components/layout/Header";
+import { UserCardProps, UserProps } from "@/interfaces";
+import UserCard from "@/components/common/PostCard";
 
-const About = () => {
+const About: React.FC<UserCardProps> = ({ posts }) => {
   return (
     <div>
       <Header />
@@ -11,8 +13,22 @@ const About = () => {
         <Button size="px-4 py-2 text-base" shape="rounded-md" title="medium" />
         <Button size="px-6 py-3 text-lg" shape="rounded-full" title="large" />
       </div>
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 p-4 ">
+        {posts?.map((user: UserProps) => (
+          <UserCard user={user} key={user.id} />
+        ))}
+      </div>
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const posts = await res.json();
+
+  return {
+    props: { posts },
+  };
+}
 
 export default About;

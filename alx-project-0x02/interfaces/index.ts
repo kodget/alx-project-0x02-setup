@@ -1,3 +1,35 @@
+export interface Company {
+  name: string;
+  catchPhrase: string;
+  bs: string;
+}
+
+export interface Geo {
+  lat: number;
+  lng: number;
+}
+
+export interface Address {
+  street: string;
+  suite: string;
+  city: string;
+  zipcode: number;
+  geo: Geo;
+}
+export interface UserProps {
+  id: number;
+  name: string;
+  username: string;
+  email: string;
+  address: Address;
+  phone: number | string;
+  website: string;
+  company: Company;
+}
+export interface UserCardProps {
+  posts: UserProps[];
+}
+
 export interface PostCardProps {
   posts: PostProps[];
 }
