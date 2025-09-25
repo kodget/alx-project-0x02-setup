@@ -44,3 +44,13 @@ export const CARDLIST: CardProps[] = [
     hoverColor: "hover:bg-yellow-300",
   },
 ];
+
+export const COLOR_OPTIONS = [
+  { label: "Blue", bg: "bg-blue-500", hover: "hover:bg-blue-700" },
+  { label: "Green", bg: "bg-emerald-500", hover: "hover:bg-emerald-700" },
+  { label: "Indigo", bg: "bg-indigo-500", hover: "hover:bg-indigo-700" },
+  { label: "Purple", bg: "bg-violet-500", hover: "hover:bg-violet-700" },
+  { label: "Red", bg: "bg-red-500", hover: "hover:bg-red-700" },
+  { label: "Yellow", bg: "bg-yellow-400", hover: "hover:bg-yellow-500" },
+  { label: "Gray", bg: "bg-gray-300", hover: "hover:bg-gray-400" },
+];
