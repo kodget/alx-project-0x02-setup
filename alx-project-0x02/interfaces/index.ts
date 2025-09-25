@@ -1,7 +1,7 @@
 export interface ButtonProps {
-  shape: string;
+  shape: "rounded-sm" | "rounded-md" | "rounded-full";
+  title: "small" | "medium" | "large";
   size: string;
-  title: string;
 }
 
 export interface Person {
