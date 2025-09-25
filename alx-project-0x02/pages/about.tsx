@@ -1,8 +1,10 @@
 import Button from "@/components/common/Button";
+import Header from "@/components/layout/Header";
 
 const About = () => {
   return (
     <div>
+      <Header />
       <div>This is the About page</div>
       <div className="flex flex-row justify-center items-center gap-4">
         <Button size="px-2 py-1 text-sm" shape="rounded-sm" title="small" />
